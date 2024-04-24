@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-
-
 function Cart({ cartItems, onClose }) {
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
@@ -16,7 +14,6 @@ function Cart({ cartItems, onClose }) {
     if (validateEmail(email)) {
       // Proceed with payment
       console.log("Email:", email);
-      // Close the cart
       onClose();
     } else {
       // Show error message or handle invalid email

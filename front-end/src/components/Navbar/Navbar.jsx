@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CiShoppingCart } from "react-icons/ci";
 import Cart from "../Cart";
-import "../Navbar/Navbar.css"
+import "../Navbar/Navbar.css";
 
 function Navbar({ cartItemsCount, cartItems }) {
   // Receive cartItems from props
@@ -22,7 +22,7 @@ function Navbar({ cartItemsCount, cartItems }) {
         </ul>
       </nav>
       {showCart && <Cart onClose={toggleCart} cartItems={cartItems} />}
-      {/* Pass cartItems to Cart */}
+     
     </>
   );
 }
